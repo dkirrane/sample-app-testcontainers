@@ -1,4 +1,4 @@
-package com.sample.app.sample_app_oracle;
+package com.sample.app.oracle;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

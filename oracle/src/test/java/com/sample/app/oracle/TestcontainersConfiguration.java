@@ -1,4 +1,4 @@
-package com.sample.app.sample_app_oracle;
+package com.sample.app.oracle;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
@@ -12,7 +12,7 @@ class TestcontainersConfiguration {
 	@Bean
 	@ServiceConnection
 	OracleContainer oracleFreeContainer() {
-		return new OracleContainer(DockerImageName.parse("gvenzl/oracle-free:latest"));
+		return new OracleContainer(DockerImageName.parse("gvenzl/oracle-free:23.4-slim-faststart"));
 	}
 
 }
